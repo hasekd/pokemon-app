@@ -19,16 +19,16 @@ const Description = ({
   return (
     <div>
       <p>
-        <b>Height</b> is <b>{heightpok * 10} cm.</b>
+        <b>Height</b> is <b>{heightpok * 10} cm</b>
       </p>
       <p>
         <b>Weight</b> is{" "}
         <b>
-          {weightpok % 1 !== 0 ? (weightpok * 0.1).toFixed(1) : weightpok * 0.1}
+          {Math.round(weightpok * 0.1)}
           kg
         </b>
       </p>
-      <h3>Stat</h3>
+      <h3>Stats</h3>
       <p>
         <b>
           {pokstat1} : {posbs1}
